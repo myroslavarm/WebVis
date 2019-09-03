@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document news*/
+
+.text {
+    text-align:  center;
+}
+
+.imgWrap{
+	width:100%;
+	text-align:center;
+}
+
+
+body{
+	background: rgb(240,240,240);
+}
+
+#allWrap{
+	width:1200px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#tableTag{
+	width:1200px;
+	height: 50px;
+	margin-top:0px;
+	margin-bottom:35px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.col-wrap1 {
+	width:570px;
+	height:100%;;
+	background: rgb(255,255,255)  right no-repeat;
+	border:5px solid rgb(255,0,0);
+	border-radius: 10px;
+	position:relative;
+	left:1%;
+	padding-bottom: 13px;
+	text-align:center;
+}
+
+.col-wrap2 {
+	width:570px;
+	height:100%;
+	position:relative;
+	left: 95%;
+	padding-bottom: 15px;
+	margin:-5px -200% -18px 50px;
+	background:rgb(255,255,255) bottom left no-repeat;
+	border:5px solid rgb(42,31,255);
+	border-radius: 12px;
+	text-align:center;
+}
+
+.col1 {
+	float:left;
+	width:80%;
+	margin-right:-100%;
+	position:relative;
+	left:-90%;
+	margin-left:-50px;
+}
+
+.col-wrap1, .col-wrap2 {
+	-moz-border-radius:50px;
+	-webkit-border-radius:20px;
+}
+
+.content {
+	padding:10px;
+}
+
+p {
+	margin-top:0;
+}
+
+.clear {
+	clear:both;
+	font-size:0;
+	overflow:hidden;
+}
