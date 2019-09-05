@@ -1,8 +1,8 @@
 # WebVis
 project for the web dev class
 
-> UPDATE AS OF STAGE 2
-I uploaded the data I will use for the word cloud and an initial mockup of the visualisation.
+> LATEST UPDATE
+Index page is complete, the respective word clouds are still WIP.
 
 In this project I'll be making a visualisation on the topic of elections. This visualisation has to be interactive and made with d3.js. The scrips for processing the data for this visualisation will also be written in JavaScript.
 
