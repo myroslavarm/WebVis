@@ -2,7 +2,9 @@
 project for the web dev class
 
 ### Project results summary:
-Start with the index page, it displays pictures of Obama and Trump and by clicking on each one of them you get the word cloud of the top-50 words from their respective 1st State of the Union addresses. The way the text files with separate words were gotten was by executing something like: **node obama.js > obamalog.js** in the command line. Everything else is automatic.
+Start with the index page, it displays pictures of Obama and Trump and by clicking on each one of them you get the word cloud of the top-50 words from their respective 1st State of the Union addresses. 
+> Note
+The way the text files with separate words were gotten was by executing something like: **node obama.js > obamalog.js** in the command line. Everything else is automatic.
 
 ### Initial project description and plan
 In this project I'll be making a visualisation on the topic of elections. This visualisation has to be interactive and made with d3.js. The scrips for processing the data for this visualisation will also be written in JavaScript.
