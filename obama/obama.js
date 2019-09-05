@@ -13,7 +13,7 @@ const mainFunc = (wordsArray) => {
 	var wordsMap = createWordMap(wordsArray);
 	var finalWordsArray = sortByCount(wordsMap);
 	
-	console.log('var myWords =', finalWordsArray.slice(0, 20), ';');
+	console.log('var myWords =', finalWordsArray.slice(0, 50), ';');
 }
 
 fs.readFile(file, 'utf8', function (err, data) {

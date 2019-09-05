@@ -11,12 +11,16 @@
 <!-- Create a div where the graph will take place -->
 <div id="my_dataviz"></div>
 
+<style>
+  text:hover { opacity: .7 !important; }
+</style>
+
 <script>
 
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = 450 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+    width = 1200 - margin.left - margin.right,
+    height = 500;
 
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz").append("svg")
@@ -30,10 +34,10 @@ var svg = d3.select("#my_dataviz").append("svg")
 // Wordcloud features that are different from one word to the other must be here
 var layout = d3.layout.cloud()
   .size([width, height])
-  .words(myWords.map(function(d) { return {text: d.word, size:d.size}; }))
-  .padding(5)        //space between words
+  .words(myWords.map(function(d) { return {text: d.word, size:d.size*2}; }))
+  .padding(10)        //space between words
   .rotate(0)
-  .fontSize(function(d) { return d.size; })      // font size of words
+  .fontSize(function(d) { return d.size*2; })      // font size of words
   .on("end", draw);
 layout.start();
 
@@ -47,7 +51,7 @@ function draw(words) {
         .data(words)
       .enter().append("text")
         .style("font-size", function(d) { return d.size; })
-        .style("fill", "#69b3a2")
+        .style("fill", "rgb(255,0,0)")
         .attr("text-anchor", "middle")
         .style("font-family", "Impact")
         .attr("transform", function(d) {
